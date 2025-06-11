@@ -5,7 +5,7 @@ All notable changes to @phantasm0009/image-zen will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2025-06-11
+## [1.0.0] - 2025-06-10
 
 ### 🎉 Initial Release
 
@@ -15,10 +15,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Core Capabilities
 - **Background Removal**: AI-powered background removal with smart fallback algorithms
-- **Super-resolution**: 2x and 4x image upscaling using advanced interpolation
+- **Super-resolution**: 2x and 4x image upscaling using advanced interpolation  
 - **Smart Compression**: Multi-format compression with automatic quality optimization
 - **Pipeline Processing**: Chain multiple operations seamlessly
 - **CLI + API Support**: Use from command line or integrate into applications
+
+#### Performance Metrics
+- Background Removal: ~25ms average processing time
+- Image Upscaling (2x): ~115ms average processing time
+- Smart Compression: 20-1000ms depending on format (WebP: ~40ms, AVIF: ~1s)
+- Pipeline Processing: ~3.6s for full enhancement workflow
+
+#### Supported Formats
+- **Input**: JPG, JPEG, PNG, WebP, TIFF, BMP
+- **Output**: JPG, JPEG, PNG, WebP, AVIF
 
 #### Supported Formats
 - **Input**: JPG, PNG, WebP, TIFF, BMP
