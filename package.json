@@ -1,0 +1,63 @@
+{
+  "name": "@phantasm0009/image-zen",
+  "version": "1.0.0",
+  "description": "Local-first image optimizer with AI-powered background removal, upscaling, and compression - no cloud dependencies",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "bin": {
+    "image-zen": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "node examples/api-example.js",
+    "cli-test": "node src/cli.js --help",
+    "build": "echo 'No build step required for Node.js package'",
+    "prepublishOnly": "npm test",
+    "postinstall": "node scripts/download-models.js"
+  },
+  "keywords": [
+    "image",
+    "optimization",
+    "compression",
+    "background-removal",
+    "upscaling",
+    "local-first",
+    "offline",
+    "ai",
+    "computer-vision",
+    "image-processing",
+    "squoosh",
+    "tensorflow-lite"
+  ],
+  "author": "phantasm0009",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phantasm0009/image-zen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/phantasm0009/image-zen/issues"
+  },
+  "homepage": "https://github.com/phantasm0009/image-zen#readme",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "glob": "^10.3.10",
+    "fs-extra": "^11.1.1",
+    "node-fetch": "^2.7.0",
+    "sharp": "^0.32.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@types/node": "^20.10.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/phantasm0009"
+  }
+}
